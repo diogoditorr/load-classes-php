@@ -1,0 +1,29 @@
+{
+    "name": "diogoditorr/load-classes-php",
+    "description": "Testando autoload de classes",
+    "minimum-stability": "stable",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Diego Oliveira",
+            "email": "35296262+diogoditorr@users.noreply.github.com",
+            "role": "Developer"
+        }
+    ],
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "autoload": {
+        "psr-4": {
+            "Classes\\": "classes/",
+            "Database\\": "database/"
+        },
+        "files": [
+            "src/Config.php"
+        ]
+    },
+    "require": {
+        "vlucas/phpdotenv": "^5.3"
+    }
+}
